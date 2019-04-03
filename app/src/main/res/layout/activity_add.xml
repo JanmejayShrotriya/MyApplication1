@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Inventory">
+
+    <TextView
+        android:id="@+id/TVadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Inventory"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TVadd">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="473dp"
+                android:orientation="vertical"
+                android:id="@+id/LLaddForm">
+
+                <EditText
+                    android:id="@+id/add_id"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Enter Item id"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="76dp" />
+
+                <EditText
+                    android:id="@+id/purchase_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="4"
+                    android:inputType="date"
+                    android:hint="Date Of Purchase"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="134dp" />
+
+                <EditText
+                    android:id="@+id/name_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="25"
+                    android:inputType="textPersonName"
+                    android:hint="Name of item"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="190dp" />
+
+                <EditText
+                    android:id="@+id/name_sup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="25"
+                    android:inputType="textPersonName"
+                    android:hint="Name of Suplier"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="268dp" />
+
+                <EditText
+                    android:id="@+id/qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="number"
+                    android:hint="Total Quantity"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="324dp" />
+
+                <EditText
+                    android:id="@+id/rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="number"
+                    android:hint="Rate Per Unit"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="389dp" />
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="number"
+                    android:hint="Total Amount "
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="458dp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/grant"
+                    android:prompt="@string/grant" />
+
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:autoSizeMaxTextSize="100dp"
+                    android:inputType="textPersonName"
+                    android:hint="Remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="458dp"
+                    tools:targetApi="o"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Inventory"
+                android:background="#020ef1"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:id="@+id/add_inventory"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/LLaddForm"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

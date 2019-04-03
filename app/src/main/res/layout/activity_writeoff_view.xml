@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Writeoff_view">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:stretchColumns="1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp">
+
+    <TableRow android:id="@+id/cols">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:text="Item Id"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Item Name"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Quntity"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Price Of Each"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Date Of purchase"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Date Of Unusablity"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Period of use"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Period Of Item Become Unserviceable"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Whether Defect Can Be Repaired"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Total Amount Of Items"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:layout_width="200dp"
+            android:padding="10dp"
+            android:text="Reason"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+        <TableRow>
+
+            <TextView
+
+                android:id="@+id/item_id"
+                android:layout_width="200dp"
+                android:text="item_id"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/name_of_item"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="name_of_item"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/wrate_per_unit"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="rate_per_unit"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/wtotal_amount"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="total_amount"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/wdate_of_purchase"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="date_of_purchase"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/wdate_of_unuseability"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="date_of_unuseability"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/wperiod_of_use"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="period_of_use"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/wperiod_of_item_become_unserviceable"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="period_of_item_become_unserviceable"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/wwheather_defect_can_be_repaired"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="wheather_defect_can_be_repaired"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/wdescription"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="description"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/reason"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="reason"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

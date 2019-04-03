@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lenovo.myapplication1">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.myapplication1"
+    tools:ignore="GoogleAppIndexingWarning">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,9 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
         <activity
-            android:name=".MainActivity"
+            android:name=".splesh"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,17 +23,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".Main3Activity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Main4Activity" />
-        <activity android:name=".Main5Activity" />
-        <activity android:name=".Main6Activity" />
-        <activity android:name=".Main7Activity" />
-        <activity android:name=".Main8Activity" />
-        <activity android:name=".Main9Activity" />
-        <activity android:name=".register" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".View_inventory" />
+        <activity android:name=".Add_Inventory" />
+        <activity android:name=".Writeoff_inventory" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Writeoff_view"></activity>
     </application>
+
 </manifest>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".View_inventory">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:stretchColumns="1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp">
+
+        <TableRow android:id="@+id/cols">
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:text="Item Id"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Purchase year "
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Name of Item"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Name of Suplier"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Total Quantity"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Rate Per Unit"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Total Amount"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Grant Type"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="Remarks"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+                android:id="@+id/item_id"
+                android:layout_width="200dp"
+                android:text="item_id"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:id="@+id/purchase_year"
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="purchase_year"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name_of_item"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="name_of_item"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name_of_suppplier"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="name_of_suppplier"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/total_quantity"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="total_quantity"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/rate_per_unit"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="rate_per_unit"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/total_amount"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="total_amount"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/grant_type"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="grant_type"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/remarks"
+
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:text="remarks"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btn_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#020ef1"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="Write-Off Request"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
