@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -39,15 +40,16 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.MyHolder> {
             holder.cols.setVisibility(View.GONE);
         }
 
+        final String requestId = data.get(position).getItem_id();
         holder.item_id.setText(data.get(position).getItem_id());
-        holder.purchase_year.setText(data.get(position).getPurchase_year());
+//        holder.purchase_year.setText(data.get(position).getPurchase_year());
         holder.name_of_item.setText(data.get(position).getName_of_item());
-        holder.name_of_suppplier.setText(data.get(position).getName_of_suplier());
-        holder.total_amount.setText(data.get(position).getTotal_amount());
-        holder.total_quantity.setText(data.get(position).getTotal_quantity());
-        holder.grant_type.setText(data.get(position).getGrant_type());
-        holder.remarks.setText(data.get(position).getRemarks());
-        holder.rate_per_unit.setText(data.get(position).getRate_per_unit());
+//        holder.name_of_suppplier.setText(data.get(position).getName_of_suplier());
+//        holder.total_amount.setText(data.get(position).getTotal_amount());
+      holder.total_quantity.setText(data.get(position).getTotal_quantity());
+//        holder.grant_type.setText(data.get(position).getGrant_type());
+//        holder.remarks.setText(data.get(position).getRemarks());
+//        holder.rate_per_unit.setText(data.get(position).getRate_per_unit());
 
         holder.request.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +64,18 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.MyHolder> {
                 );
             }
         });
+        holder.viewDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(v.getContext(),DetailsActivity.class);
+                intent.putExtra("id",requestId);
+                context.startActivity(intent);
+
+//                Toast.makeText(v.getContext(),"detail",Toast.LENGTH_SHORT
+////                ).show();
+            }
+        });
     }
 
     @Override
@@ -70,7 +84,7 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.MyHolder> {
     }
 
     class MyHolder extends RecyclerView.ViewHolder {
-        Button request;
+        Button request,viewDetail;
         TableRow cols;
         TextView item_id,purchase_year,name_of_item,name_of_suppplier,total_quantity
                 ,rate_per_unit,total_amount,grant_type,remarks;
@@ -78,16 +92,17 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.MyHolder> {
         public MyHolder(View itemView) {
             super(itemView);
             request = itemView.findViewById(R.id.btn_request);
+            viewDetail=itemView.findViewById(R.id.btn_detail);
             cols = itemView.findViewById(R.id.cols);
             item_id = itemView.findViewById(R.id.item_id);
-            purchase_year = itemView.findViewById(R.id.purchase_year);
+//            purchase_year = itemView.findViewById(R.id.purchase_year);
             name_of_item = itemView.findViewById(R.id.name_of_item);
-            name_of_suppplier= itemView.findViewById(R.id.name_of_suppplier);
+//            name_of_suppplier= itemView.findViewById(R.id.name_of_suppplier);
             total_quantity = itemView.findViewById(R.id.total_quantity);
-            rate_per_unit = itemView.findViewById(R.id.rate_per_unit);
-            total_amount = itemView.findViewById(R.id.total_amount);
-            grant_type = itemView.findViewById(R.id.grant_type);
-            remarks= itemView.findViewById(R.id.remarks);
+//            rate_per_unit = itemView.findViewById(R.id.rate_per_unit);
+//            total_amount = itemView.findViewById(R.id.total_amount);
+//            grant_type = itemView.findViewById(R.id.grant_type);
+//            remarks= itemView.findViewById(R.id.remarks);
         }
     }
 }

@@ -33,7 +33,8 @@
         <activity
             android:name=".Main2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Writeoff_view"></activity>
+        <activity android:name=".Writeoff_view" />
+        <activity android:name=".DetailsActivity"></activity>
     </application>
 
 </manifest>

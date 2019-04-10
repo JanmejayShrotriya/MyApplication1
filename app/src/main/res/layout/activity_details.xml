@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp">
+
+        <TableRow>
+            <TextView
+                android:text="Pushase Year:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/purchase_year"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pushase Year"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suplier Name:"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/Name_of_Suplier"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Name of Suplier"                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Rate Per Unit:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/Rate_Per_UnitPer_Unit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Rate Per Unit"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Total Amount:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:id="@+id/Total_Amount"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Total Amount"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Grant Type:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/Grant_TypeType"
+
+                android:text="Grant Type"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Remarks:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/Remarks"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Remarksjhcbdsjvbkjvbdkjsvbkjvbkjsfbvkjsbvkbvdbvvjvbj,vbj,vvbvvbjvbvbkfvbf"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
