@@ -2,7 +2,16 @@ package com.example.lenovo.myapplication1;
 
 public class WriteoffModel {
 
-    String id,item_id,name_of_item,rate_per_unit,total_amount,date_of_purchase,date_of_unuseability,period_of_use,period_of_item_become_unserviceable,wheather_defect_can_be_repaired,description,reason;
+    String id,item_id,name_of_item,rate_per_unit,total_amount
+            ,status,date_of_purchase,date_of_unuseability,period_of_use,period_of_item_become_unserviceable,wheather_defect_can_be_repaired,description,reason;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getId() {
         return id;
@@ -100,8 +109,14 @@ public class WriteoffModel {
         this.reason = reason;
     }
 
-    public WriteoffModel(String id, String item_id, String name_of_item, String rate_per_unit, String total_amount, String date_of_purchase, String date_of_unuseability, String period_of_use, String period_of_item_become_unserviceable, String wheather_defect_can_be_repaired, String description, String reason) {
+    public WriteoffModel(String id, String item_id, String name_of_item
+            , String rate_per_unit, String total_amount, String date_of_purchase
+            , String date_of_unuseability, String period_of_use,
+                         String period_of_item_become_unserviceable,
+                         String wheather_defect_can_be_repaired, String description,
+                         String reason,String status) {
         this.id = id;
+        this.status= status;
         this.item_id = item_id;
         this.name_of_item = name_of_item;
         this.rate_per_unit = rate_per_unit;

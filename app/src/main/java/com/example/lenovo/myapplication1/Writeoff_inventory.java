@@ -110,8 +110,6 @@ public class Writeoff_inventory extends AppCompatActivity {
                 defect_repair.getText().toString().trim() + "",
                 defect_description.getText().toString().trim() + "",
                 reason.getText().toString().trim() + ""
-
-
         );
         call.enqueue(new Callback<ServerFormat>() {
             @Override

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsActivity">
+    tools:context=".DetailsActivity"
+    >
+
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:paddingTop="20dp">
+        android:paddingTop="10dp">
 
         <TableRow>
             <TextView
@@ -19,12 +21,11 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="25dp"/>
+                android:textSize="20dp"/>
             <TextView
-                android:id="@+id/purchase_year"
+                android:id="@+id/purchase_yearTV"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Pushase Year"
                 android:textSize="20dp"
                 android:textColor="#000000"/>
         </TableRow>
@@ -35,13 +36,13 @@
                 android:layout_height="wrap_content"
                 android:text="Suplier Name:"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
-                android:id="@+id/Name_of_Suplier"
+                android:id="@+id/Name_of_SuplierTV"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Name of Suplier"                android:textSize="20dp"
+                android:textSize="20dp"
                 android:textColor="#000000"/>
         </TableRow>
 
@@ -51,13 +52,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
-                android:id="@+id/Rate_Per_UnitPer_Unit"
+                android:id="@+id/Rate_Per_UnitTV"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Rate Per Unit"
                 android:textSize="20dp"
                 android:textColor="#000000"/>
         </TableRow>
@@ -68,14 +68,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"
                 />
             <TextView
-                android:id="@+id/Total_Amount"
+                android:id="@+id/Total_AmountTV"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="Total Amount"
                 android:textSize="20dp"
                 android:textColor="#000000"/>
         </TableRow>
@@ -86,12 +85,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
-                android:id="@+id/Grant_TypeType"
-
-                android:text="Grant Type"
+                android:id="@+id/Grant_TypeTV"
                 android:textSize="20dp"
                 android:textColor="#000000"/>
         </TableRow>
@@ -102,15 +99,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
-                android:id="@+id/Remarks"
+                android:id="@+id/RemarksTV"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Remarksjhcbdsjvbkjvbdkjsvbkjvbkjsfbvkjsbvkbvdbvvjvbj,vbj,vvbvvbjvbvbkfvbf"
+                android:layout_width="match_parent"
                 android:textSize="20dp"
+                android:layout_marginRight="20dp"
                 android:textColor="#000000"/>
         </TableRow>
     </TableLayout>
-</android.support.constraint.ConstraintLayout>
+</HorizontalScrollView>

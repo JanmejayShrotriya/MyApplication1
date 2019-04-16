@@ -60,8 +60,10 @@ public class Writeoff_view extends AppCompatActivity {
                                     temp.get(i).get("period_of_use")+"",
                                     temp.get(i).get("period_of_item_become_unserviceable")+"",
                                     temp.get(i).get("wheather_defect_can_be_repaired")+"",
-                                    temp.get(i).get("descrption")+"",
-                                    temp.get(i).get("reason")+""));
+                                    temp.get(i).get("description")+"",
+                                    temp.get(i).get("reason")+"",
+                                    temp.get(i).get("status")+""
+                                    ));
                         }
                         adapter = new writeoffmyAdapter(Writeoff_view.this,data);
                         r.setAdapter(adapter);
